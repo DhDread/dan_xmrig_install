@@ -1,2 +1,2 @@
-echo -e "pkill chromium\n./xmrig/build/xmrig --url pool.hashvault.pro:443 --user 46Rrucmkm7SKbQ5GnmySEgAzRoPMFCFjnZQfqTcwV9DFN8k4xwpxpFpGkBbd48Pk1obbM7GQctgZjW7gpTaRLWaD5t3o6UY --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14" > mine_start.py
+echo -e "pkill chromium\n./xmrig/build/xmrig --url pool.hashvault.pro:443 --user 46Rrucmkm7SKbQ5GnmySEgAzRoPMFCFjnZQfqTcwV9DFN8k4xwpxpFpGkBbd48Pk1obbM7GQctgZjW7gpTaRLWaD5t3o6UY --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14" > ~/mine_start.py
 sudo chmod +x mine_start.py 
