@@ -18,3 +18,4 @@ sudo chmod +x check_mine.py
 (crontab -l 2>/dev/null || true; echo "*/20 17-23 * * * /usr/bin/bash check_mine.py") | crontab - 
 (crontab -l 2>/dev/null || true; echo "*/20 1-3 * * * /usr/bin/bash check_mine.py") | crontab - 
 (crontab -l 2>/dev/null || true; echo "05 4 * * * sudo reboot now") | crontab -
+rm -rf ~/dan_xmrig_install
